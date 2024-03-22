@@ -70,12 +70,12 @@ class DoublyLinkedList {
         if (node.prev) {
           node.prev.next = node.next;
         }
-        
+
         if (node.next) {
           node.next.prev = node.prev;
         }
     }
-    
+
     return node;
   }
 
@@ -111,7 +111,7 @@ class LRUCache {
   }
 
   // ADD THE GIVEN KEY AND VALUE TO THE CACHE
-  // IF THE CACHE ALREADY CONTAINS THE KEY, UPDATE ITS VALUE AND MOVE IT TO 
+  // IF THE CACHE ALREADY CONTAINS THE KEY, UPDATE ITS VALUE AND MOVE IT TO
   // THE HEAD OF THE LIST
   // IF THE CACHE DOESN'T CONTAIN THE KEY, ADD IT TO THE CACHE AND PLACE IT
   // AT THE HEAD OF THE LIST
@@ -145,7 +145,7 @@ class LRUCache {
 
 if (require.main === module) {
   let list = new DoublyLinkedList();
-  
+
   list.addHead(new Node(1));
 
   console.log("List has same node as head and tail");
