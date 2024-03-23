@@ -119,6 +119,7 @@ class LRUCache {
 
     }
     if (this.hash[key]) {
+      // you don't need to make a new node, that's the point
       let nodeToPut = new Node (value, key);
       this.hash[key] = nodeToPut;
       this.list.moveNodeToHead(nodeToPut);
